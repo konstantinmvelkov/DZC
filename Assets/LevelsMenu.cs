@@ -7,20 +7,28 @@ public class LevelsMenu : MonoBehaviour
 {
     public void LevelOne ()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Jumping");
     }
 
-    public void LevelTwo()
+    public void LevelTwo ()
     {
-        Debug.Log("Level Two");
+        SceneManager.LoadScene("Jumping2");
     }
 
-    public void LevelThree()
+    public void LevelThree ()
     {
-        Debug.Log("Level Three");
+        SceneManager.LoadScene("Jumping3");
     }
-    public void LevelFour()
+    public void LevelFour ()
     {
-        Debug.Log("Level Four");
+        SceneManager.LoadScene("Jumping4");
+    }
+    public void LevelFive ()
+    {
+        SceneManager.LoadScene("Jumping5");
+    }
+    public void LevelSix ()
+    {
+        SceneManager.LoadScene("Jumping6");
     }
 }
