@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SurvivalQuestions_Level.unity
     guid: a63876c7114b7264fba09cbea164cee5
+  - enabled: 1
+    path: Assets/Scenes/RisingLava_Level.unity
+    guid: fd40bd7bb80dfe74a82ed8956c4d3d62
   m_configObjects: {}
