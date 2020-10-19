@@ -11,11 +11,6 @@ public class Fireball : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
-
-        if(transform.position.y <= -3.86)
-        {
-            Destroy(gameObject);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -25,6 +20,10 @@ public class Fireball : MonoBehaviour
         {
             //Dead
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        if(collider.tag == "Ground")
+        {
+            Destroy(gameObject);
         }
     }
 }

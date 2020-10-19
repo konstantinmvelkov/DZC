@@ -13,9 +13,12 @@ public class FireballSpawner : MonoBehaviour
 
     private float current_target;
 
+    public SurvivalTimer survivalTimer;
+
     void Start()
     {
         timer = delay;
+        Random.InitState(System.DateTime.Now.Millisecond);
     }
 
 
@@ -25,7 +28,14 @@ public class FireballSpawner : MonoBehaviour
         timer -= Time.deltaTime;
         if(timer <= 0)
         {
-            timer = delay;
+            if (survivalTimer != null)
+            {
+                timer = Mathf.Clamp(survivalTimer.time / 100f * delay, 0.2f, delay);
+            }
+            else
+            {
+                timer = delay;
+            }
             Instantiate(fireball_prefab, transform.position + new Vector3(Random.Range(-max_range, max_range), 0, 0), Quaternion.identity);
         }
     }
