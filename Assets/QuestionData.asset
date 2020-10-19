@@ -39,3 +39,131 @@ MonoBehaviour:
     - 'In an animal den. '
     correctAns: As close to your water source as possible & where it is easiest to
       see from boat or plane.
+  - questionInfo: You survived the shark and go back to fishing. You manage to catch
+      a huge, spikey fish. What do you do with it?
+    options:
+    - Get the sushi table prepped.
+    - Praise Poseidon, cook the fish thoroughly, and reap the benefits.
+    - Release the fish. Fish with spines are likely toxic.
+    - Keep it as a pet.
+    correctAns: Release the fish. Fish with spines are likely toxic.
+  - questionInfo: Stress can lead to panic, and panic to death. What should you focus
+      on mentally?
+    options:
+    - Keep focused on your next important task.
+    - Worry about all of the things you have to do.
+    - Make a timeline to track your days stranded.
+    - Concentrate on only the positive things.
+    correctAns: Keep focused on your next important task.
+  - questionInfo: You have no idea where you are and no way to contact the outside
+      world. What's the best way to try and get help?
+    options:
+    - 'Write out the word: "HELP" with rocks on the sand and wave your arms.'
+    - Build up a signal fire and keep it lit next to your "HELP".
+    - Yell as much and as often as you can.
+    - Who cares? Nobody can help you now.
+    correctAns: Build up a signal fire and keep it lit next to your "HELP".
+  - questionInfo: Even though you are not hurt, you might be suffering from shock
+      due to your circumstances. What is the easiest 'tell' for shock?
+    options:
+    - Confused and having trouble focusing.
+    - Infrequent urination.
+    - Sweating profusely.
+    - Exhaustion.
+    correctAns: Confused and having trouble focusing.
+  - questionInfo: Man, you are thirsty. You vaguely remember something about a solar
+      still. What do you need to make one?
+    options:
+    - A plastic sheet, a container, a hole, and vegetation or contaminated water
+      to distill into purified water.
+    - A metal tube connected to a bucket.
+    - A jug of distilled water and a magnifying glass.
+    - A bucket with a clear plastic lid.
+    correctAns: A plastic sheet, a container, a hole, and vegetation or contaminated
+      water to distill into purified water.
+  - questionInfo: 'You see some bright red berries on a bush near the beach. What
+      should you do? '
+    options:
+    - Lick your fingers and get ready to chow down. Yum!
+    - You're not dumb, you need to boil these berries before eating them.
+    - Eat them only after you clean them.
+    - Realize you don't know enough about wild plants and ignore them.
+    correctAns: Realize you don't know enough about wild plants and ignore them.
+  - questionInfo: When your boat goes down, your last means of survival is a rubber
+      raft. Once ashore, what should you do with this raft?
+    options:
+    - Cut it up for clothing.
+    - Keep it in one piece and use it for shelter.
+    - Use it for starting a fire.
+    - Eat it.
+    correctAns: Keep it in one piece and use it for shelter.
+  - questionInfo: What is the most important survival tool you can have on a tropical
+      island?
+    options:
+    - Knife
+    - Rope
+    - Matches
+    - Gauze
+    correctAns: Knife
+  - questionInfo: It's hot and you're thirsty. You haven't found water yet. What
+      will happen if you try and drink ocean water?
+    options:
+    - You'll get nauseous and delirious.
+    - Your blood pressure and heart rate will rise.
+    - You'll get more thirsty due to dehydration.
+    - All of the above.
+    correctAns: All of the above.
+  - questionInfo: Okay, you've decided to take your chances at sea. In what shape
+      should your raft be?
+    options:
+    - Rectangle
+    - Oval
+    - Circle
+    - Hexagon
+    correctAns: Rectangle
+  - questionInfo: You groggily come awake to realize you are alive on an island.
+      What's the very first thing you should do?
+    options:
+    - Promptly lose your mind. No way this is happening!
+    - Scan the area for other survivors.
+    - Build a fire.
+    - Start trying to hunt wild animals.
+    correctAns: Scan the area for other survivors.
+  - questionInfo: If you are stuck on a large island, where should you stay?
+    options:
+    - Stay on the beach, close to where you washed up.
+    - Go to the island's highest point.
+    - Build a raft and head to sea.
+    - Stay in the trees, it is safer there.
+    correctAns: Stay on the beach, close to where you washed up.
+  - questionInfo: Rationing your water is important, even on an island. How much
+      water do you need to drink per day, as an average adult?
+    options:
+    - Half of a gallon.
+    - 64 oz.
+    - 1 gallon.
+    - It depends on your physical exertion.
+    correctAns: It depends on your physical exertion.
+  - questionInfo: What shape branches make the best shelter?
+    options:
+    - Y shaped.
+    - S shaped.
+    - G shaped.
+    - X shaped.
+    correctAns: Y shaped.
+  - questionInfo: You're fishing in the shallows when a shark attacks you. How should
+      you defend yourself?
+    options:
+    - Punch it in the tail to paralyze it!
+    - Claw at its eyes or gills.
+    - Try to out swim it to shore.
+    - Freeze still, hope it doesn't see you.
+    correctAns: Claw at its eyes or gills.
+  - questionInfo: 'As you sit and stare out to sea it comes to you: you can drink
+      your own urine. Should you?'
+    options:
+    - Only in the most dire of situations.
+    - Absolutely. Any time. It's sterile, therefore just fine.
+    - Never drink urine, even in dire situations.
+    - I'd rather die of thirst.
+    correctAns: Only in the most dire of situations.
