@@ -8,30 +8,45 @@ public class SurvivalQuestions : MonoBehaviour
     [SerializeField] private SurvivalQuestionsUI survivalQuestionsUI;
     [SerializeField] private SurvivalQuestionsDataScriptable survivalData;
 
+    [SerializeField] private QuitLevel quitLevel;
+
     private List<Question> questions;
     private Question selectedQuestion;
 
     private List<bool> isAsked;
+    private int numberofAnsweredQuestions;  
+
+    public GameObject sqUI;
+    public GameObject qLevel;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
+        sqUI = GameObject.Find("SurvivalQuestionsUI");
+        qLevel = GameObject.Find("QuitLevel");
+        //Deactivate the end of the level
+        qLevel.SetActive(false); 
+
         questions = survivalData.questions;
 
         isAsked = new List<bool>();
 
         for(int i = 0; i < questions.Count; i++)
         {
-            Debug.Log(isAsked);
+            //Debug.Log(isAsked);
             isAsked.Add(false);
         }
+        numberofAnsweredQuestions = 0;
         SelectQuestion();
     }
 
    void SelectQuestion()
     {
-        if (isAsked.Contains(false))
+        //if (isAsked.Contains(false))
+        if(numberofAnsweredQuestions < 3)
         {
+            numberofAnsweredQuestions++;
+
             int val = -1;
             while (val == -1)
             {
@@ -51,7 +66,9 @@ public class SurvivalQuestions : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Menu");
+            sqUI.SetActive(true);
+            qLevel.SetActive(true);
+            quitLevel.Start();
         }
     }
 
