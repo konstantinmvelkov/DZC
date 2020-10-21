@@ -28,10 +28,10 @@ public class RestartPlayerLevel : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
-        if (sceneName == "Jumping" || sceneName == "Jumping2" || sceneName == "Jumping3" || sceneName == "Jumping4" || sceneName == "Jumping5" || sceneName == "Jumping6")
+        if (sceneName == "GrassFirst" || sceneName == "GrassSecond" || sceneName == "AutumnFirst" || sceneName == "AutumnSecond" || sceneName == "WinterFirst" || sceneName == "WinterSecond")
         {
             player.transform.position = spawnPoint.position;
-            if (sceneName == "Jumping")
+            if (sceneName == "GrassFirst")
             {
                 ball.transform.position = spawnBall.position;
             }
