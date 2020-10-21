@@ -46,7 +46,7 @@ public class RestartPlayerLevel : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if (sceneName == "RisingLava_Level")
+        if (sceneName == "RisingLava_Level" || sceneName == "RisingLava_Level_2")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
