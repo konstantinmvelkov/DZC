@@ -7,19 +7,11 @@ using UnityEngine.SceneManagement;
 public class QuitLevel : MonoBehaviour
 {
     [SerializeField] SurvivalQuestions survivalQuestions;
-
-    public GameObject sqUI;
-    public GameObject quitLevel;
+    [SerializeField] GameObject sqUI;
+    [SerializeField] GameObject quitLevel;
 
     public void Start()
     {
-        sqUI = GameObject.Find("SurvivalQuestionsUI");
-        quitLevel = GameObject.Find("QuitLevel");
-
-        Debug.Log("SQUI object: " + sqUI);
-        Debug.Log("QL object: " + quitLevel);
-
-        //quitLevel.SetActive(true);
         sqUI.SetActive(false);
     }
 
@@ -28,10 +20,9 @@ public class QuitLevel : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void RestartLevel ()
+    /*public void RestartLevel ()
     {
-        //squitLevel.SetActive(false);
         sqUI.SetActive(true);
         survivalQuestions.Start();
-    }
+    }*/
 }

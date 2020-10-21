@@ -6,17 +6,13 @@ public class StartLevel : MonoBehaviour
 {
     [SerializeField] SurvivalQuestions survivalQuestions;
 
-    public GameObject startLevel;
-    public GameObject sqUI;
-    public GameObject quitLevel;
+    [SerializeField] GameObject startLevel;
+    [SerializeField] GameObject sqUI;
+    [SerializeField] GameObject quitLevel;
 
     // Start is called before the first frame update
     void Start()
     {
-        startLevel = GameObject.Find("StartLevel");
-        sqUI = GameObject.Find("SurvivalQuestionsUI");
-        quitLevel = GameObject.Find("QuitLevel");
-
         sqUI.SetActive(false);
         quitLevel.SetActive(false);
     }

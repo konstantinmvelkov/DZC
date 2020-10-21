@@ -7,9 +7,9 @@ public class ManagePlayer : MonoBehaviour
     [SerializeField] Transform spawnPoint;
     [SerializeField] Transform checkPoint;
 
-    void OnCollisionEnter2D(Collision2D col) {
-        if(col.transform.CompareTag("Player")) {
-            col.transform.position = spawnPoint.position;
+    void OnCollisionEnter2D(Collision2D collidedObject) {
+        if(collidedObject.transform.CompareTag("Player")) {
+            collidedObject.transform.position = spawnPoint.position;
         }
     }
 }
