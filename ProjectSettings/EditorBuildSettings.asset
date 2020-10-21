@@ -8,12 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 24fad619053618445a7018963a33ae6a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jumping.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Jumping2.unity
-    guid: 1231cd5e1717b4d6292acdcbf2543529
+    path: Assets/Scenes/GrassFirst.unity
+    guid: 541ae75276c304996ab63dea1efe48f0
+  - enabled: 1
+    path: Assets/Scenes/GrassSecond.unity
+    guid: d2a7b572075284878a83cf8adaaae211
   - enabled: 1
     path: Assets/Scenes/AutumnFirst.unity
     guid: d30f68a3ead624ccf89a8022586616f3
@@ -35,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RisingLava_Level.unity
     guid: fd40bd7bb80dfe74a82ed8956c4d3d62
+  - enabled: 1
+    path: Assets/Scenes/RisingLava_Level_2.unity
+    guid: 06e48b206e8ddd140b3b382988d94432
   m_configObjects: {}

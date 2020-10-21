@@ -12,7 +12,15 @@ public class QuitLevel : MonoBehaviour
 
     public void Start()
     {
-        sqUI.SetActive(false);
+        // Create a temporary reference to the current scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "SurvivalQuestions_Level")
+        {
+            sqUI.SetActive(false);
+        }
     }
 
     public void ExitLevel ()
