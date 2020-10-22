@@ -1100,7 +1100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: 6}
+  m_AnchoredPosition: {x: -43, y: 9}
   m_SizeDelta: {x: 443.751, y: 288.773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506854074
@@ -4806,10 +4806,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I see you have been doing well with the physical\n challenges!\n\nBut
-    lets see how much you know about surviving in an island.\n\nBla Bla Bla Bla Bla....\n\nAnswer
-    all my questions correctly and I will give you an important material for your
-    boat."
+  m_Text: "It turns out you were still able to survive my \nquestions!\n\nLet's see
+    if I can challenge you this time!\n\nGet ready and think carefully! You don't
+    want \nto die now!\n\nLet's begin!"
 --- !u!222 &2127192497
 CanvasRenderer:
   m_ObjectHideFlags: 0

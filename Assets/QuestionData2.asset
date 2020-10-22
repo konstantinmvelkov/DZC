@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0485fef5ca15e38499d6d77cd4e736c1, type: 3}
+  m_Name: QuestionData2
+  m_EditorClassIdentifier: 
+  questions:
+  - questionInfo: Even though you are not hurt, you might be suffering from shock
+      due to your circumstances. What is the easiest 'tell' for shock?
+    options:
+    - Confused and having trouble focusing.
+    - Infrequent urination.
+    - Sweating profusely.
+    - Exhaustion.
+    correctAns: Confused and having trouble focusing.
+  - questionInfo: Man, you are thirsty. You vaguely remember something about a solar
+      still. What do you need to make one?
+    options:
+    - A plastic sheet, a container, a hole, and vegetation or contaminated water
+      to distill into purified water.
+    - A metal tube connected to a bucket.
+    - A jug of distilled water and a magnifying glass.
+    - A bucket with a clear plastic lid.
+    correctAns: A plastic sheet, a container, a hole, and vegetation or contaminated
+      water to distill into purified water.
+  - questionInfo: You see some bright red berries on a bush near the beach. What
+      should you do?
+    options:
+    - Lick your fingers and get ready to chow down. Yum!
+    - You're not dumb, you need to boil these berries before eating them.
+    - Eat them only after you clean them.
+    - Realize you don't know enough about wild plants and ignore them.
+    correctAns: Realize you don't know enough about wild plants and ignore them.
+  - questionInfo: When your boat goes down, your last means of survival is a rubber
+      raft. Once ashore, what should you do with this raft?
+    options:
+    - Cut it up for clothing.
+    - Keep it in one piece and use it for shelter.
+    - Use it for starting a fire.
+    - Eat it.
+    correctAns: Keep it in one piece and use it for shelter.
+  - questionInfo: What is the most important survival tool you can have on a tropical
+      island?
+    options:
+    - Knife
+    - Rope
+    - Matches
+    - Gauze
+    correctAns: Knife
+  - questionInfo: It's hot and you're thirsty. You haven't found water yet. What
+      will happen if you try and drink ocean water?
+    options:
+    - You'll get nauseous and delirious.
+    - Your blood pressure and heart rate will rise.
+    - You'll get more thirsty due to dehydration.
+    - All of the above.
+    correctAns: All of the above.
