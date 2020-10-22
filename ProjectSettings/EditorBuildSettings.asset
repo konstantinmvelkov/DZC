@@ -8,12 +8,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 24fad619053618445a7018963a33ae6a
+  - enabled: 1
+    path: Assets/Scenes/MiniGamesMenu.unity
+    guid: 16541ad91936dc849b94457eae60d99d
   - enabled: 0
-    path: Assets/Scenes/Jumping.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/JumpingLevels.unity
+    guid: e47b3a430bca7654e9d40a2ecb8aede5
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/VulcanoLevels.unity
+    guid: 4e16ef8ecc012c947801a67378b47c79
+  - enabled: 1
+    path: Assets/Scenes/RisingLavaLevels.unity
+    guid: bd0f282b9e220c64da06de8bb0e58a7f
+  - enabled: 1
+    path: Assets/Scenes/SurvivalQuestionsLevels.unity
+    guid: 4da0332cbd4032f489d5e6845738f416
   - enabled: 1
     path: Assets/Scenes/GrassFirst.unity
     guid: 541ae75276c304996ab63dea1efe48f0

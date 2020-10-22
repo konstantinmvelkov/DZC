@@ -5,7 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class LevelsMenu : MonoBehaviour
 {
+    //Going back from MiniGamesMenu to Menu
+    public void MiniGamesMenuToMenu ()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    //Going from MiniGamesMenu to JumpingLevels
+    public void MiniGamesMenuToJumpingLevels()
+    {
+        SceneManager.LoadScene("JumpingLevels");
+    }
+    //Going from MiniGamesMenu to VulcanoLevels
+    public void MiniGamesMenuToVulcanoLevels()
+    {
+        SceneManager.LoadScene("VulcanoLevels");
+    }
+    //Going from MiniGamesMenu to RisingLavaLevels
+    public void MiniGamesMenuToRisingLavaLevels()
+    {
+        SceneManager.LoadScene("RisingLavaLevels");
+    }
+    //Going from MiniGamesMenu to SurvivalQuestionsLevels
+    public void MiniGamesMenuToSurvivalQuestionsLevels()
+    {
+        SceneManager.LoadScene("SurvivalQuestionsLevels");
+    }
+    //Going back from JumpingLevels/VulcanoLevels/RisingLavaLevels/SurvivalQuestionsLevels to MiniGamesMenu
+    public void LevelsToMiniGamesMenu()
+    {
+        SceneManager.LoadScene("MiniGamesMenu");
+    }
 
+    //Loading the different levels
     //Jumping Levels
     public void LevelOneJump ()
     {

@@ -33,72 +33,21 @@ public class QuitLevel : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
-        /*bool isJump = false;
-        bool isVulc = false;
-        bool isLava = false;
-        bool isQA = false;*/
-        int game = 0;
-
         if (sceneName == "GrassFirst" || sceneName == "GrassSecond" || sceneName == "AutumnFirst" || sceneName == "AutumnSecond" || sceneName == "WinterFirst" || sceneName == "WinterSecond")
         {
-            //isJump = true;
-            game = 1;
+            SceneManager.LoadScene("JumpingLevels");
         }
         if (sceneName == "Vulcano_Level")
         {
-            //isVulc = true;
-            game = 2;
+            SceneManager.LoadScene("VulcanoLevels");
         }
         if (sceneName == "RisingLava_Level" || sceneName == "RisingLava_Level_2")
         {
-            //isLava = true;
-            game = 3;
+            SceneManager.LoadScene("RisingLavaLevels");
         }
         if (sceneName == "SurvivalQuestions_Level")
         {
-            //isQA = true;
-            game = 4;
+            SceneManager.LoadScene("SurvivalQuestionsLevels");
         }
-
-        SceneManager.LoadScene("Menu");
-        //mainMenu.ExitLevel(game);
-
-        /*//Exiting a level
-        GameObject MainMenu;
-        GameObject JumpingLevelsMenu;
-        GameObject VulcanoLevelsMenu;
-        GameObject RisingLavaLevelsMenu;
-        GameObject SurvivingQuestionsLevelsMenu;
-
-        MainMenu = GameObject.FindGameObjectWithTag("MainMenu");
-        JumpingLevelsMenu = GameObject.FindGameObjectWithTag("JumpingLevelsMenu");
-        VulcanoLevelsMenu = GameObject.FindGameObjectWithTag("VulcanoLevelsMenu");
-        RisingLavaLevelsMenu = GameObject.FindGameObjectWithTag("RisingLavaLevelsMenu");
-        SurvivingQuestionsLevelsMenu = GameObject.FindGameObjectWithTag("SurvivingQuestionsLevelsMenu");
-
-        Debug.Log("Main Menu: " + MainMenu);
-        Debug.Log("Jumping Levels Menu: " + JumpingLevelsMenu);
-        Debug.Log("Vulcano Levels Menu: " + VulcanoLevelsMenu);
-        Debug.Log("Rising Lava Levels Menu: " + RisingLavaLevelsMenu);
-        Debug.Log("Surviving Questions Levels Menu: " + SurvivingQuestionsLevelsMenu);
-
-        MainMenu.SetActive(false);
-
-        if (isJump == true)
-        {
-            JumpingLevelsMenu.SetActive(true);
-        } 
-        else if (isVulc == true)
-        {
-            VulcanoLevelsMenu.SetActive(true);
-        }
-        else if (isLava == true)
-        {
-            RisingLavaLevelsMenu.SetActive(true);
-        }
-        else if (isQA == true)
-        {
-            SurvivingQuestionsLevelsMenu.SetActive(true);
-        }*/
     }
 }

@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] GameObject Menu;
+    /*[SerializeField] GameObject Menu;
     [SerializeField] GameObject JumpingLevelsMenu;
     [SerializeField] GameObject VulcanoLevelsMenu;
     [SerializeField] GameObject RisingLavaLevelsMenu;
-    [SerializeField] GameObject SurvivingQuestionsLevelsMenu;
+    [SerializeField] GameObject SurvivingQuestionsLevelsMenu;*/
 
-    /*public void PlayGame ()
+    public void PlayGame()
     {
-        SceneManager.LoadScene("SampleScene");
-    }*/
+        SceneManager.LoadScene("MiniGamesMenu");
+    }
 
     public void QuitGame ()
     {
@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void ExitLevel (int game)
+   /* public void ExitLevel (int game)
     {
         Menu = GameObject.FindGameObjectWithTag("MainMenu");
         JumpingLevelsMenu = GameObject.FindGameObjectWithTag("JumpingLevelsMenu");
@@ -55,5 +55,5 @@ public class MainMenu : MonoBehaviour
         {
             SurvivingQuestionsLevelsMenu.SetActive(true);
         }
-    }
+    }*/
 }
