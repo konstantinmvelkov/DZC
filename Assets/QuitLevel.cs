@@ -11,7 +11,7 @@ public class QuitLevel : MonoBehaviour
     [SerializeField] GameObject sqUI;
     [SerializeField] GameObject quitLevel;
 
-    GameObject mainMenu = GameObject.Find("MainMenu").GetComponent<GameObject>();
+    //GameObject mainMenu = GameObject.Find("MainMenu").GetComponent<GameObject>();
 
     public void Start()
     {
@@ -61,7 +61,7 @@ public class QuitLevel : MonoBehaviour
         }
 
         SceneManager.LoadScene("Menu");
-        mainMenu.ExitLevel(game);
+        //mainMenu.ExitLevel(game);
 
         /*//Exiting a level
         GameObject MainMenu;
