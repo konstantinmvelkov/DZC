@@ -116,12 +116,10 @@ public class LevelsMenu : MonoBehaviour
     }
     public void LevelTwoQA()
     {
-        //SceneManager.LoadScene("SurvivalQuestions_Level_2");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("SurvivalQuestions_Level_2");
     }
     public void LevelThreeQA()
     {
-        //SceneManager.LoadScene("SurvivalQuestions_Level_3");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("SurvivalQuestions_Level_3");
     }
 }

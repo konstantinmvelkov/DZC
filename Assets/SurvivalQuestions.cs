@@ -7,6 +7,8 @@ public class SurvivalQuestions : MonoBehaviour
 {
     [SerializeField] private SurvivalQuestionsUI survivalQuestionsUI;
     [SerializeField] private SurvivalQuestionsDataScriptable survivalData;
+    [SerializeField] private SurvivalQuestionsDataScriptable2 survivalData2;
+    [SerializeField] private SurvivalQuestionsDataScriptable3 survivalData3;
     [SerializeField] private QuitLevel quitLevel;
 
     [SerializeField] GameObject sqUI;
@@ -23,7 +25,23 @@ public class SurvivalQuestions : MonoBehaviour
     {
         qLevel.SetActive(false);
 
-        questions = survivalData.questions;
+        // Create a temporary reference to the current scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "SurvivalQuestions_Level")
+        {
+            questions = survivalData.questions;
+        } 
+        else if (sceneName == "SurvivalQuestions_Level_2")
+        {
+            questions = survivalData2.questions;
+        }
+        else if (sceneName == "SurvivalQuestions_Level_3")
+        {
+            questions = survivalData3.questions;
+        }
 
         isAsked = new List<bool>();
 
@@ -31,16 +49,13 @@ public class SurvivalQuestions : MonoBehaviour
         {
             isAsked.Add(false);
         }
-        numberofAnsweredQuestions = 0;
         SelectQuestion();
     }
 
    void SelectQuestion()
     {
-        if(numberofAnsweredQuestions < 3)
+        if(isAsked.Contains(false))
         {
-            numberofAnsweredQuestions++;
-
             int val = -1;
             while (val == -1)
             {

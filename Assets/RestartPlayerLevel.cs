@@ -36,7 +36,7 @@ public class RestartPlayerLevel : MonoBehaviour
                 ball.transform.position = spawnBall.position;
             }
         }
-        if (sceneName == "SurvivalQuestions_Level")
+        if (sceneName == "SurvivalQuestions_Level" || sceneName == "SurvivalQuestions_Level_2" || sceneName == "SurvivalQuestions_Level_3")
         {
             startLevel.SetActive(true);
             sqUI.SetActive(false);
