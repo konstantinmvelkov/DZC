@@ -1620,7 +1620,7 @@ GameObject:
   - component: {fileID: 899986881}
   - component: {fileID: 899986880}
   m_Layer: 5
-  m_Name: ContractulationsText
+  m_Name: CongractulationsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
