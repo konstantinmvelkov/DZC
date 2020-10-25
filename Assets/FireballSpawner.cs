@@ -11,13 +11,12 @@ public class FireballSpawner : MonoBehaviour
 
     public float max_range = 5f;
 
-    private float current_target;
-
     public SurvivalTimer survivalTimer;
 
     void Start()
     {
         timer = delay;
+       
         Random.InitState(System.DateTime.Now.Millisecond);
     }
 
@@ -30,7 +29,7 @@ public class FireballSpawner : MonoBehaviour
         {
             if (survivalTimer != null)
             {
-                timer = Mathf.Clamp(survivalTimer.time / 100f * delay, 0.2f, delay);
+                timer = Mathf.Clamp(survivalTimer.timer / survivalTimer.time * delay, 0.2f, delay);
             }
             else
             {

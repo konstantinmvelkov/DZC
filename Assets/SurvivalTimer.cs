@@ -11,13 +11,16 @@ public class SurvivalTimer : MonoBehaviour
     private string text = "Survive!\nTime left: ";
 
     public float time = 100;
+    [HideInInspector]
+    public float timer = 100;
 
-    public int timeOutSceneBuildIndex;
+    public GameObject reward;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        reward.SetActive(false);
+        timer = time;
     }
 
     // Update is called once per frame
@@ -27,9 +30,9 @@ public class SurvivalTimer : MonoBehaviour
 
         timerText.text = text + time.ToString("0.0") + "s";
 
-        if(time <= 0)
+        if(time <= 0 && reward.activeSelf == false)
         {
-            SceneManager.LoadScene(timeOutSceneBuildIndex);
+            reward.SetActive(true);
         }
     }
 }

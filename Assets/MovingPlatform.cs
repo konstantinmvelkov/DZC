@@ -8,6 +8,8 @@ public class MovingPlatform : MonoBehaviour
     public float frequency = 1;
 
     private Vector3 startingPosition;
+
+    public float phase = 0f;
     
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,6 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = startingPosition + (Vector3)amplitude * Mathf.Cos(2 * Mathf.PI * frequency * Time.time);
+        transform.position = startingPosition + (Vector3)amplitude * Mathf.Cos(2 * Mathf.PI * frequency * Time.time + phase);
     }
 }
