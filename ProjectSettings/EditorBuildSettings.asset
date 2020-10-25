@@ -66,18 +66,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SurvivalQuestions_Level.unity
     guid: a63876c7114b7264fba09cbea164cee5
   - enabled: 1
-    path: Assets/Scenes/SurvivalQuestions_Level_2.unity
-    guid: 51e62bc8ca636d444a7721687209021d
-  - enabled: 1
-    path: Assets/Scenes/SurvivalQuestions_Level_3.unity
-    guid: 20ffa6fbb536cf44cb67f43b57204cdf
-  - enabled: 1
-    path: Assets/Scenes/Rising Lava Levels/RisingLava_Level_1.unity
-    guid: 1bbc593b4ae604f468d9212e4af5bc55
-  - enabled: 1
-    path: Assets/Scenes/Rising Lava Levels/RisingLava_Level_2.unity
-    guid: 892d116e170591b4ca71e548bac4a5b3
-  - enabled: 1
     path: Assets/Scenes/Rising Lava Levels/RisingLava_Level_3.unity
     guid: fd40bd7bb80dfe74a82ed8956c4d3d62
   - enabled: 1
