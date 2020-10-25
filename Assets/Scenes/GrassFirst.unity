@@ -3786,7 +3786,7 @@ RectTransform:
   - {fileID: 1928281190}
   - {fileID: 657427093}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4322,7 +4322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e091df561b90edb4c972f442b6902971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endLevelMenu: {fileID: 0}
+  endLevelMenu: {fileID: 1712087640}
   levelNumber: 3
 --- !u!61 &2069285530
 BoxCollider2D:

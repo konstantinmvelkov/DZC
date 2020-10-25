@@ -9,7 +9,7 @@ public class EndLevelJumping : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         
-        // endLevelMenu.SetActive(true);
+        endLevelMenu.SetActive(true);
         if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") < levelNumber) {
             PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
         }
