@@ -42,10 +42,10 @@ EditorBuildSettings:
     path: Assets/Scenes/GrassSecond.unity
     guid: d2a7b572075284878a83cf8adaaae211
   - enabled: 1
-    path: Assets/Scenes/AutumnFirst.unity
+    path: Assets/Scenes/AutumnSecond.unity
     guid: d30f68a3ead624ccf89a8022586616f3
   - enabled: 1
-    path: Assets/Scenes/AutumnSecond.unity
+    path: Assets/Scenes/AutumnFirst.unity
     guid: 2d0f7fdeb4cf14302a92d5618fe96590
   - enabled: 1
     path: Assets/Scenes/WinterFirst.unity
