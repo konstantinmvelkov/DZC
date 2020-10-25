@@ -18,7 +18,7 @@ public class LevelsMenu : MonoBehaviour
     //Going from MiniGamesMenu to VulcanoLevels
     public void MiniGamesMenuToVulcanoLevels()
     {
-        SceneManager.LoadScene("VulcanoLevels");
+        SceneManager.LoadScene("FireballLevels");
     }
     //Going from MiniGamesMenu to RisingLavaLevels
     public void MiniGamesMenuToRisingLavaLevels()
@@ -63,20 +63,18 @@ public class LevelsMenu : MonoBehaviour
         SceneManager.LoadScene("WinterSecond");
     }
 
-    //Volcano Levels
-    public void LevelOneVulc()
+    //Fireball Levels
+    public void LevelOneFire()
     {
-        SceneManager.LoadScene("Vulcano_Level");
+        SceneManager.LoadScene("Fireball_Level_1");
     }
-    public void LevelTwoVulc()
+    public void LevelTwoFire()
     {
-        //SceneManager.LoadScene("Vulcano_Level_2");\
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("Fireball_Level_2");
     }
-    public void LevelThreeVulc()
+    public void LevelThreeFire()
     {
-        //.LoadScene("Vulcano_Level_3");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("Fireball_Level_3");
     }
 
     //Rising Lava Levels
@@ -90,18 +88,15 @@ public class LevelsMenu : MonoBehaviour
     }
     public void LevelThreeLava()
     {
-        //SceneManager.LoadScene("RisingLava_Level_3");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("RisingLava_Level_3");
     }
     public void LevelFourLava()
     {
-        //SceneManager.LoadScene("RisingLava_Level_4");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("RisingLava_Level_4");
     }
     public void LevelFiveLava()
     {
-        //SceneManager.LoadScene("RisingLava_Level_5");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("RisingLava_Level_5");
     }
     public void LevelSixLava()
     {

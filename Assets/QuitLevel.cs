@@ -37,15 +37,15 @@ public class QuitLevel : MonoBehaviour
         {
             SceneManager.LoadScene("JumpingLevels");
         }
-        if (sceneName == "Vulcano_Level")
+        if (sceneName == "Fireball_Level_1" || sceneName == "Fireball_Level_2" || sceneName == "Fireball_Level_3")
         {
-            SceneManager.LoadScene("VulcanoLevels");
+            SceneManager.LoadScene("FireballLevels");
         }
-        if (sceneName == "RisingLava_Level" || sceneName == "RisingLava_Level_2")
+        if (sceneName == "RisingLava_Level" || sceneName == "RisingLava_Level_2" || sceneName == "RisingLava_Level_3" || sceneName == "RisingLava_Level_4" || sceneName == "RisingLava_Level_5")
         {
             SceneManager.LoadScene("RisingLavaLevels");
         }
-        if (sceneName == "SurvivalQuestions_Level")
+        if (sceneName == "SurvivalQuestions_Level" || sceneName == "SurvivalQuestions_Level_2" || sceneName == "SurvivalQuestions_Level_3")
         {
             SceneManager.LoadScene("SurvivalQuestionsLevels");
         }
