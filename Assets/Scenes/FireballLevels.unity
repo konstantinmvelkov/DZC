@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 396581473}
   - component: {fileID: 396581474}
   m_Layer: 5
-  m_Name: VulcanoLevelsMenu
+  m_Name: FireballLevelsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 456397384}
   - component: {fileID: 456397383}
   m_Layer: 5
-  m_Name: 'Level1VulcButton '
+  m_Name: 'Level1FireButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 396581474}
-        m_MethodName: LevelOneVulc
+        m_MethodName: LevelOneFire
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 889138591}
   - component: {fileID: 889138590}
   m_Layer: 5
-  m_Name: Level2VulcButton
+  m_Name: Level2FireButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 396581474}
-        m_MethodName: LevelTwoVulc
+        m_MethodName: LevelTwoFire
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 1356769503}
   - component: {fileID: 1356769504}
   m_Layer: 0
-  m_Name: VulcanoLevelsPng
+  m_Name: FireballLevelsPng
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 1503178002}
   - component: {fileID: 1503178001}
   m_Layer: 5
-  m_Name: Level3VulcButton
+  m_Name: Level3FireButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 396581474}
-        m_MethodName: LevelThreeVulc
+        m_MethodName: LevelThreeFire
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
