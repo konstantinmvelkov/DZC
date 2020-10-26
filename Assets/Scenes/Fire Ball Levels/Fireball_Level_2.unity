@@ -2849,7 +2849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 118761158}
-  time: 60
+  time: 45
   timer: 100
   reward: {fileID: 799384305}
 --- !u!1 &1737846556
