@@ -80,7 +80,7 @@ public class LevelsMenu : MonoBehaviour
     //Rising Lava Levels
     public void LevelOneLava()
     {
-        SceneManager.LoadScene("RisingLava_Level");
+        SceneManager.LoadScene("RisingLava_Level_1");
     }
     public void LevelTwoLava()
     {
@@ -100,8 +100,7 @@ public class LevelsMenu : MonoBehaviour
     }
     public void LevelSixLava()
     {
-        //SceneManager.LoadScene("RisingLava_Level_6");
-        Debug.Log("No such level yet");
+        SceneManager.LoadScene("RisingLava_Level_6");
     }
 
     //Surviving Questions Levels

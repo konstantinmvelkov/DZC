@@ -41,7 +41,7 @@ public class QuitLevel : MonoBehaviour
         {
             SceneManager.LoadScene("FireballLevels");
         }
-        if (sceneName == "RisingLava_Level" || sceneName == "RisingLava_Level_2" || sceneName == "RisingLava_Level_3" || sceneName == "RisingLava_Level_4" || sceneName == "RisingLava_Level_5")
+        if (sceneName == "RisingLava_Level_1" || sceneName == "RisingLava_Level_2" || sceneName == "RisingLava_Level_3" || sceneName == "RisingLava_Level_4" || sceneName == "RisingLava_Level_5" || sceneName == "RisingLava_Level_6")
         {
             SceneManager.LoadScene("RisingLavaLevels");
         }
