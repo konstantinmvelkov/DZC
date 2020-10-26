@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &37466028
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2464,7 +2464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.1, y: 1.5}
+  m_AnchoredPosition: {x: -2.0999985, y: 1.5}
   m_SizeDelta: {x: 724.93835, y: 366.1469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395716740
@@ -3710,7 +3710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireball_prefab: {fileID: 2574261939478481812, guid: d798d8bfca0c5e74594f531950ef4b79,
     type: 3}
-  delay: 0.5
+  delay: 0.2
   max_range: 9
   survivalTimer: {fileID: 1690712632}
 --- !u!4 &2066575947

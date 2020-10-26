@@ -29,7 +29,7 @@ public class FireballSpawner : MonoBehaviour
         {
             if (survivalTimer != null)
             {
-                timer = Mathf.Clamp(survivalTimer.timer / survivalTimer.time * delay, 0.2f, delay);
+                timer = Mathf.Clamp(survivalTimer.timer / survivalTimer.time * delay, 0.1f, delay);
             }
             else
             {

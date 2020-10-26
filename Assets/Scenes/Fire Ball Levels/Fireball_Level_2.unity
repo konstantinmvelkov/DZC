@@ -3494,7 +3494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireball_prefab: {fileID: 2574261939478481812, guid: d798d8bfca0c5e74594f531950ef4b79,
     type: 3}
-  delay: 0.5
+  delay: 0.2
   max_range: 9
   survivalTimer: {fileID: 1690712632}
 --- !u!4 &2066575947
