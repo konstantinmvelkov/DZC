@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 16341079}
   - component: {fileID: 16341078}
   m_Layer: 5
-  m_Name: VulcanoLevels
+  m_Name: FireballLevels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0528d2b2baaf81c4f901568659891676, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d4170e3fc8396e4a8b0b138d3dab72f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ece91f969a630e4ea44c145bcef02ad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e0669415d7d75b48940c4aca9f50b6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ea8dc0a144c96148b0c4791e0991ddd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44405283cf6599f4689ca13a22aa6cfc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
