@@ -11,10 +11,9 @@ public class EndLevelRisingLava : MonoBehaviour
     {
         
         endLevelMenu.SetActive(true);
-        //Copied from EndLevelJumping
-        /*if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") < levelNumber) {
-            PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
+        if(PlayerPrefs.GetInt("lavaLevelLastCompleted") < levelNumber) {
+            PlayerPrefs.SetInt("lavaLevelLastCompleted",levelNumber);
         }
-        Debug.Log(PlayerPrefs.GetInt("jumpingLevelLastCompleted"));*/
+        Debug.Log(PlayerPrefs.GetInt("lavaLevelLastCompleted"));
     }
 }

@@ -10,10 +10,9 @@ public class EndLevelFireball : MonoBehaviour
     {
         
         endLevelMenu.SetActive(true);
-        //Copied from EndLevelJumping
-        /*if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") < levelNumber) {
-            PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
+        if(PlayerPrefs.GetInt("fireballLevelLastCompleted") < levelNumber) {
+            PlayerPrefs.SetInt("fireballLevelLastCompleted",levelNumber);
         }
-        Debug.Log(PlayerPrefs.GetInt("jumpingLevelLastCompleted"));*/
+        Debug.Log(PlayerPrefs.GetInt("fireballLevelLastCompleted"));
     }
 }

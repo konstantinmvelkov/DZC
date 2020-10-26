@@ -10,10 +10,9 @@ public class EndLevelSurvivalQuestions : MonoBehaviour
     {
         
         endLevelMenu.SetActive(true);
-        //Copied from EndLevelJumping
-        /*if (PlayerPrefs.GetInt("jumpingLevelLastCompleted") < levelNumber) {
-            PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
+        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") < levelNumber) {
+            PlayerPrefs.SetInt("questionsLevelLastCompleted",levelNumber);
         }
-        Debug.Log(PlayerPrefs.GetInt("jumpingLevelLastCompleted"));*/
+        Debug.Log(PlayerPrefs.GetInt("questionsLevelLastCompleted"));
     }
 }
