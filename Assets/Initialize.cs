@@ -22,7 +22,20 @@ public class Initialize : MonoBehaviour
         if(!PlayerPrefs.HasKey("escapeAttempts")) {
             PlayerPrefs.SetInt("escapeAttempts",0);
         }
-
-        Debug.Log(PlayerPrefs.GetInt("jumpingLevelLastCompleted"));
+        Debug.Log("_____________________________________________________vvvvvvv");
+        Debug.Log("Jumping: " + PlayerPrefs.GetInt("jumpingLevelLastCompleted").ToString());
+        Debug.Log("Lava: " + PlayerPrefs.GetInt("lavaLevelLastCompleted").ToString());
+        Debug.Log("Questions: " + PlayerPrefs.GetInt("questionsLevelLastCompleted").ToString());
+        Debug.Log("Fireball: " + PlayerPrefs.GetInt("fireballLevelLastCompleted").ToString());
+        Debug.Log("Escape: " + PlayerPrefs.GetInt("escapeAttempts").ToString());
+    }
+    void Update()
+    {
+        //Only for testing purposes HAS TO BE REMOVED
+        if (Input.GetKeyDown("space"))
+        {
+            PlayerPrefs.DeleteAll();
+            print("Player preferences deleted");
+        }
     }
 }

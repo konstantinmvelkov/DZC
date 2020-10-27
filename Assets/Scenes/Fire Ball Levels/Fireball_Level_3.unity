@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 211650492}
-  levelNumber: 0
+  levelNumber: 3
 --- !u!1 &823774072
 GameObject:
   m_ObjectHideFlags: 0

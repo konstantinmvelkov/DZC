@@ -214,7 +214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1450178541376546, guid: 2c1329a7c9cbc294098ecdd208a800a8, type: 3}
       propertyPath: m_Name
-      value: CharaRef_07
+      value: Villager
       objectReference: {fileID: 0}
     - target: {fileID: 4815857750074534, guid: 2c1329a7c9cbc294098ecdd208a800a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 1173730420}
-  levelNumber: 0
+  levelNumber: 3
 --- !u!1 &260460015
 GameObject:
   m_ObjectHideFlags: 0
