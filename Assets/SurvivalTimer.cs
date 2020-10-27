@@ -15,6 +15,8 @@ public class SurvivalTimer : MonoBehaviour
     public float timer = 100;
 
     public GameObject reward;
+
+    private bool finished = false;
     
     // Start is called before the first frame update
     void Start()
@@ -26,13 +28,22 @@ public class SurvivalTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;
-
-        timerText.text = text + time.ToString("0.0") + "s";
-
-        if(time <= 0 && reward.activeSelf == false)
+        if (!finished)
         {
-            reward.SetActive(true);
+            time -= Time.deltaTime;
+
+            timerText.text = text + time.ToString("0.0") + "s";
+
+            if (time <= 0 && reward.activeSelf == false)
+            {
+                reward.SetActive(true);
+                finished = true;
+            }
+        }
+        else
+        {
+            timerText.text = "Grab the island's reward!";
+            time = 0;
         }
     }
 }

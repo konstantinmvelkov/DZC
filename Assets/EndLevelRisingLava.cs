@@ -8,16 +8,22 @@ public class EndLevelRisingLava : MonoBehaviour
     [SerializeField] int levelNumber;
     [SerializeField] GameObject reward;
 
+    public RisingLava risingLava;
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.transform.CompareTag("Player"))
         {
             endLevelMenu.SetActive(true);
-            reward.SetActive(false);
+            if (reward)
+            {
+                reward.SetActive(false);
+            }
+            risingLava.Stop();
         }
         //Copied from EndLevelJumping
-        /*if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") < levelNumber) {
-            PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
+        if(PlayerPrefs.GetInt("lavaLevelLastCompleted") < levelNumber) {
+            PlayerPrefs.SetInt("lavaLevelLastCompleted", levelNumber);
         }
         Debug.Log(PlayerPrefs.GetInt("lavaLevelLastCompleted"));
     }

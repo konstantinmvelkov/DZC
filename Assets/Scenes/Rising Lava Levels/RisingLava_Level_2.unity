@@ -1221,6 +1221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 1799882452}
   levelNumber: 2
+  reward: {fileID: 0}
+  risingLava: {fileID: 94380071}
 --- !u!1 &762472061
 GameObject:
   m_ObjectHideFlags: 0

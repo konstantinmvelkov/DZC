@@ -13,6 +13,8 @@ public class FireballSpawner : MonoBehaviour
 
     public SurvivalTimer survivalTimer;
 
+    private bool spawn = true;
+
     void Start()
     {
         timer = delay;
@@ -25,17 +27,26 @@ public class FireballSpawner : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        if(timer <= 0)
+        if(timer <= 0 && spawn)
         {
             if (survivalTimer != null)
             {
-                timer = Mathf.Clamp(survivalTimer.timer / survivalTimer.time * delay, 0.1f, delay);
+                timer = Mathf.Clamp(survivalTimer.timer / survivalTimer.time * delay, 0.01f, delay);
             }
             else
             {
                 timer = delay;
             }
             Instantiate(fireball_prefab, transform.position + new Vector3(Random.Range(-max_range, max_range), 0, 0), Quaternion.identity);
+        }
+    }
+
+    public void Stop()
+    {
+        spawn = false;
+        foreach(GameObject fireball in GameObject.FindGameObjectsWithTag("Fireball"))
+        {
+            Destroy(fireball);
         }
     }
 }
