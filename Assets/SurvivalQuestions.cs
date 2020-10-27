@@ -9,10 +9,11 @@ public class SurvivalQuestions : MonoBehaviour
     [SerializeField] private SurvivalQuestionsDataScriptable survivalData;
     [SerializeField] private SurvivalQuestionsDataScriptable2 survivalData2;
     [SerializeField] private SurvivalQuestionsDataScriptable3 survivalData3;
-    [SerializeField] private QuitLevel quitLevel;
+    //[SerializeField] private QuitLevel quitLevel;
 
     [SerializeField] GameObject sqUI;
     [SerializeField] GameObject qLevel;
+    [SerializeField] GameObject qLevelFail;
 
     [SerializeField] GameObject reward;
 
@@ -21,10 +22,13 @@ public class SurvivalQuestions : MonoBehaviour
 
     private List<bool> isAsked;
 
+    public bool allCorrect = true;
+
     // Start is called before the first frame update
     public void Start()
     {
         qLevel.SetActive(false);
+        qLevelFail.SetActive(false);
         reward.SetActive(false);
 
         // Create a temporary reference to the current scene.
@@ -77,13 +81,24 @@ public class SurvivalQuestions : MonoBehaviour
         }
         else
         {
-            sqUI.SetActive(true);
-            qLevel.SetActive(true);
-            if (reward.activeSelf == false)
+            sqUI.SetActive(false);
+            //qLevel.SetActive(true);
+            if (allCorrect == true)
             {
-                reward.SetActive(true);
+                //Quit Level Menu for all Correct answers
+                qLevel.SetActive(true);
+                if (reward.activeSelf == false)
+                {
+                    reward.SetActive(true);
+                }
             }
-            quitLevel.Start();
+            else
+            {
+                allCorrect = true;
+                //Quit Level Menu for not all Correct answers
+                qLevelFail.SetActive(true);
+            }
+            //quitLevel.Start();
         }
     }
 
@@ -99,6 +114,7 @@ public class SurvivalQuestions : MonoBehaviour
         else
         {
             //No
+            allCorrect = false;
         }
 
         Invoke("SelectQuestion", 0.8f);

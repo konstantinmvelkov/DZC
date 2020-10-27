@@ -13,6 +13,7 @@ public class RestartPlayerLevel : MonoBehaviour
     //SurvivalQuestions_Level
     [SerializeField] GameObject sqUI;
     [SerializeField] GameObject quitLevel;
+    [SerializeField] GameObject quitLevelFail;
     [SerializeField] GameObject startLevel;
 
     //Vulcano_Level
@@ -41,6 +42,8 @@ public class RestartPlayerLevel : MonoBehaviour
             startLevel.SetActive(true);
             sqUI.SetActive(false);
             quitLevel.SetActive(false);
+            quitLevelFail.SetActive(false);
+            menu.SetActive(false);
         }
         if (sceneName == "Vulcano_Level")
         {
