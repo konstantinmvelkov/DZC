@@ -31,8 +31,8 @@ public class Fireball : MonoBehaviour
         Debug.Log(collider.tag);
         if(collider.tag == "Player")
         {
-            //Dead
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameObject.Find("DeadController").GetComponent<FireballDead>().Die();
+            collider.gameObject.SetActive(false);
         }
         if(collider.tag == "Ground")
         {
