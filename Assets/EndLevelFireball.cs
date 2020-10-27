@@ -19,6 +19,6 @@ public class EndLevelFireball : MonoBehaviour
         /*if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") < levelNumber) {
             PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
         }
-        Debug.Log(PlayerPrefs.GetInt("fireballLevelLastCompleted"));
+        Debug.Log(PlayerPrefs.GetInt("fireballLevelLastCompleted"));*/
     }
 }
