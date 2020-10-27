@@ -16,6 +16,8 @@ public class RisingLava : MonoBehaviour
     public float startDelay = 3f;
 
     private float actualY;
+
+    private bool stopped = false;
     
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,7 @@ public class RisingLava : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(Mathf.Sin(SideWaysFrequency * 2 * Mathf.PI * Time.time) * SideWaysAmplitude, actualY + Mathf.Sin(UpwardsFrequency * 2 * Mathf.PI * Time.time) * UpwardsAmplitude, -1);
-        if (startDelay <= 0)
+        if (startDelay <= 0 && !stopped)
         {
             actualY += riseSpeed * Time.deltaTime;
         }
@@ -44,5 +46,10 @@ public class RisingLava : MonoBehaviour
             //Dead
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    public void Stop()
+    {
+        stopped = true;
     }
 }
