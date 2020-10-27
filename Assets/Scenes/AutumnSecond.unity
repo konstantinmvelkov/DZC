@@ -4811,4 +4811,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 318419656}
+  reward: {fileID: 2100025562}
   levelNumber: 2

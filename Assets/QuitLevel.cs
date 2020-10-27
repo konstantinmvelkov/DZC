@@ -20,7 +20,7 @@ public class QuitLevel : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
-        if (sceneName == "SurvivalQuestions_Level")
+        if (sceneName == "SurvivalQuestions_Level" || sceneName == "SurvivalQuestions_Level_2" || sceneName == "SurvivalQuestions_Level_3")
         {
             sqUI.SetActive(false);
         }

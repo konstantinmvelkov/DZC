@@ -1515,6 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 1550009097}
+  reward: {fileID: 628295649}
   levelNumber: 4
 --- !u!61 &628295653
 BoxCollider2D:
@@ -4076,6 +4077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 0}
+  reward: {fileID: 0}
   levelNumber: 4
 --- !u!61 &1511040096
 BoxCollider2D:

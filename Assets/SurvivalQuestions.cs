@@ -14,16 +14,18 @@ public class SurvivalQuestions : MonoBehaviour
     [SerializeField] GameObject sqUI;
     [SerializeField] GameObject qLevel;
 
+    [SerializeField] GameObject reward;
+
     private List<Question> questions;
     private Question selectedQuestion;
 
     private List<bool> isAsked;
-    private int numberofAnsweredQuestions; 
 
     // Start is called before the first frame update
     public void Start()
     {
         qLevel.SetActive(false);
+        reward.SetActive(false);
 
         // Create a temporary reference to the current scene.
         Scene currentScene = SceneManager.GetActiveScene();
@@ -77,6 +79,10 @@ public class SurvivalQuestions : MonoBehaviour
         {
             sqUI.SetActive(true);
             qLevel.SetActive(true);
+            if (reward.activeSelf == false)
+            {
+                reward.SetActive(true);
+            }
             quitLevel.Start();
         }
     }
