@@ -18,6 +18,8 @@ public class RisingLava : MonoBehaviour
     private float actualY;
 
     private bool stopped = false;
+
+    public AudioSource dieSound;
     
     // Start is called before the first frame update
     void Start()
@@ -41,15 +43,24 @@ public class RisingLava : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
+        if (collider.tag == "Player" && !stopped)
         {
             //Dead
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            dieSound.Play();
+            collider.gameObject.SetActive(false);
+            stopped = true;
+            StartCoroutine(waitReset());
         }
     }
 
     public void Stop()
     {
         stopped = true;
+    }
+
+    IEnumerator waitReset()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
