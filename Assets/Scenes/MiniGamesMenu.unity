@@ -2802,6 +2802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c4c54630ea44c76a0ada69a6df5ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escapeButton: {fileID: 9910673}
   emptyBase: {fileID: 1790769952}
   emptySail: {fileID: 664730564}
   emptyFood: {fileID: 1522628816}

@@ -20,14 +20,18 @@ public class AvailableLevelsFireball : MonoBehaviour
         {
             level1.interactable = true;
         }
+        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 1 && PlayerPrefs.GetInt("escapeAttempts") == 0)
+        {
+            level1.interactable = true;
+        }
         //enable level 2 (and 1)
-        if ((PlayerPrefs.GetInt("fireballLevelLastCompleted") == 1 || PlayerPrefs.GetInt("fireballLevelLastCompleted") == 2) && PlayerPrefs.GetInt("escapeAttempts") == 1)
+        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 1 && PlayerPrefs.GetInt("escapeAttempts") == 1)
         {
             level1.interactable = true;
             level2.interactable = true;
         }
         //enable level 3
-        if ((PlayerPrefs.GetInt("fireballLevelLastCompleted") == 2 || PlayerPrefs.GetInt("fireballLevelLastCompleted") == 3) && PlayerPrefs.GetInt("escapeAttempts") == 2)
+        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 2 && PlayerPrefs.GetInt("escapeAttempts") == 2)
         {
             level1.interactable = true;
             level2.interactable = true;

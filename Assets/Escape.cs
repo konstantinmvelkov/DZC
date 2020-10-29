@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Escape : MonoBehaviour
 {
+    [SerializeField] GameObject escapeButton;
+
     [SerializeField] GameObject emptyBase;
     [SerializeField] GameObject emptySail;
     [SerializeField] GameObject emptyFood;
@@ -33,44 +35,24 @@ public class Escape : MonoBehaviour
         PlayerPrefs.SetInt("escapeAttempts",PlayerPrefs.GetInt("escapeAttempts")+1);
         //based on which escape, play another video
 
-        //all part one levels are completed
-        if (base1.activeSelf == true || sail1.activeSelf == true || food1.activeSelf == true || spane1 == true)
-        {
-            base1.SetActive(false);
-            sail1.SetActive(false);
-            food1.SetActive(false);
-            spane1.SetActive(false);
+        base1.SetActive(false);
+        sail1.SetActive(false);
+        food1.SetActive(false);
+        spane1.SetActive(false);
+        base2.SetActive(false);
+        sail2.SetActive(false);
+        food2.SetActive(false);
+        spane2.SetActive(false);
+        base3.SetActive(false);
+        sail3.SetActive(false);
+        food3.SetActive(false);
+        spane3.SetActive(false);
 
-            emptyBase.SetActive(true);
-            emptySail.SetActive(true);
-            emptyFood.SetActive(true);
-            emptySpane.SetActive(true);
-        }
-        //all part two levels are completed
-        if (base2.activeSelf == true || sail2.activeSelf == true || food2.activeSelf == true || spane2 == true)
-        {
-            base2.SetActive(false);
-            sail2.SetActive(false);
-            food2.SetActive(false);
-            spane2.SetActive(false);
+        escapeButton.SetActive(false);
 
-            emptyBase.SetActive(true);
-            emptySail.SetActive(true);
-            emptyFood.SetActive(true);
-            emptySpane.SetActive(true);
-        }
-        //all part three levels are completed
-        if (base3.activeSelf == true || sail3.activeSelf == true || food3.activeSelf == true || spane3 == true)
-        {
-            base3.SetActive(false);
-            sail3.SetActive(false);
-            food3.SetActive(false);
-            spane3.SetActive(false);
-
-            emptyBase.SetActive(true);
-            emptySail.SetActive(true);
-            emptyFood.SetActive(true);
-            emptySpane.SetActive(true);
-        }
+        emptyBase.SetActive(true);
+        emptySail.SetActive(true);
+        emptyFood.SetActive(true);
+        emptySpane.SetActive(true);
     }
 }
