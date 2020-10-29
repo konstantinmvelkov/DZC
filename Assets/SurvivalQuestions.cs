@@ -9,7 +9,6 @@ public class SurvivalQuestions : MonoBehaviour
     [SerializeField] private SurvivalQuestionsDataScriptable survivalData;
     [SerializeField] private SurvivalQuestionsDataScriptable2 survivalData2;
     [SerializeField] private SurvivalQuestionsDataScriptable3 survivalData3;
-    //[SerializeField] private QuitLevel quitLevel;
 
     [SerializeField] GameObject sqUI;
     [SerializeField] GameObject qLevel;
@@ -82,7 +81,6 @@ public class SurvivalQuestions : MonoBehaviour
         else
         {
             sqUI.SetActive(false);
-            //qLevel.SetActive(true);
             if (allCorrect == true)
             {
                 //Quit Level Menu for all Correct answers
@@ -98,7 +96,6 @@ public class SurvivalQuestions : MonoBehaviour
                 //Quit Level Menu for not all Correct answers
                 qLevelFail.SetActive(true);
             }
-            //quitLevel.Start();
         }
     }
 
