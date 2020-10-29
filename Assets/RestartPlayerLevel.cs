@@ -45,11 +45,11 @@ public class RestartPlayerLevel : MonoBehaviour
             quitLevelFail.SetActive(false);
             menu.SetActive(false);
         }
-        if (sceneName == "Vulcano_Level")
+        if (sceneName == "Fireball_Level_1" || sceneName == "Fireball_Level_2" || sceneName == "Fireball_Level_3")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if (sceneName == "RisingLava_Level" || sceneName == "RisingLava_Level_2")
+        if (sceneName == "RisingLava_Level_1" || sceneName == "RisingLava_Level_2" || sceneName == "RisingLava_Level_3" || sceneName == "RisingLava_Level_4" || sceneName == "RisingLava_Level_5" || sceneName == "RisingLava_Level_6")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

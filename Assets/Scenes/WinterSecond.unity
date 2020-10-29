@@ -1635,6 +1635,7 @@ GameObject:
   - component: {fileID: 1163318786}
   - component: {fileID: 1163318785}
   - component: {fileID: 1163318784}
+  - component: {fileID: 1163318788}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -1723,6 +1724,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1163318788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163318783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885b02679775ff74796e99d5cc918489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285628631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,6 +3284,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1163318788}
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1493265398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3510,6 +3534,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1163318788}
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1640917302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3565,6 +3600,7 @@ MonoBehaviour:
   ball: {fileID: 0}
   sqUI: {fileID: 0}
   quitLevel: {fileID: 0}
+  quitLevelFail: {fileID: 0}
   startLevel: {fileID: 0}
   fireballSpawner: {fileID: 0}
   menu: {fileID: 90303981}
@@ -8857,6 +8893,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1163318788}
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1995967961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9072,6 +9119,17 @@ MonoBehaviour:
       - m_Target: {fileID: 90303981}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1163318788}
+        m_MethodName: Resume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
