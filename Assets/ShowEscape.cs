@@ -30,64 +30,64 @@ public class ShowEscape : MonoBehaviour
     void Awake()
     {
         //First part
-        if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") == 2)
+        if(PlayerPrefs.GetInt("jumpingLevelLastCompleted") == 2 && PlayerPrefs.GetInt("escapeAttempts") == 0)
         {
             emptyBase.SetActive(false);
             base1.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 1)
+        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 1 && PlayerPrefs.GetInt("escapeAttempts") == 0)
         {
             emptySail.SetActive(false);
             sail1.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("lavaLevelLastCompleted") == 2)
+        if (PlayerPrefs.GetInt("lavaLevelLastCompleted") == 2 && PlayerPrefs.GetInt("escapeAttempts") == 0)
         {
             emptyFood.SetActive(false);
             food1.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 1)
+        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 1 && PlayerPrefs.GetInt("escapeAttempts") == 0)
         {
             emptySpane.SetActive(false);
             spane1.SetActive(true);
         }
         //Second part
-        if (PlayerPrefs.GetInt("jumpingLevelLastCompleted") == 4)
+        if (PlayerPrefs.GetInt("jumpingLevelLastCompleted") == 4 && PlayerPrefs.GetInt("escapeAttempts") == 1)
         {
             emptyBase.SetActive(false);
             base2.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 2)
+        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 2 && PlayerPrefs.GetInt("escapeAttempts") == 1)
         {
             emptySail.SetActive(false);
             sail2.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("lavaLevelLastCompleted") == 4)
+        if (PlayerPrefs.GetInt("lavaLevelLastCompleted") == 4 && PlayerPrefs.GetInt("escapeAttempts") == 1)
         {
             emptyFood.SetActive(false);
             food2.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 2)
+        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 2 && PlayerPrefs.GetInt("escapeAttempts") == 1)
         {
             emptySpane.SetActive(false);
             spane2.SetActive(true);
         }
         //Third Part
-        if (PlayerPrefs.GetInt("jumpingLevelLastCompleted") == 6)
+        if (PlayerPrefs.GetInt("jumpingLevelLastCompleted") == 6 && PlayerPrefs.GetInt("escapeAttempts") == 2)
         {
             emptyBase.SetActive(false);
             base3.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 3)
+        if (PlayerPrefs.GetInt("fireballLevelLastCompleted") == 3 && PlayerPrefs.GetInt("escapeAttempts") == 2)
         {
             emptySail.SetActive(false);
             sail3.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("lavaLevelLastCompleted") == 6)
+        if (PlayerPrefs.GetInt("lavaLevelLastCompleted") == 6 && PlayerPrefs.GetInt("escapeAttempts") == 2)
         {
             emptyFood.SetActive(false);
             food3.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 3)
+        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 3 && PlayerPrefs.GetInt("escapeAttempts") == 2)
         {
             emptySpane.SetActive(false);
             spane3.SetActive(true);
