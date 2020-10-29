@@ -21,7 +21,7 @@ public class EndLevelRisingLava : MonoBehaviour
             }
             risingLava.Stop();
         }
-        //Copied from EndLevelJumping
+
         if(PlayerPrefs.GetInt("lavaLevelLastCompleted") < levelNumber) {
             PlayerPrefs.SetInt("lavaLevelLastCompleted", levelNumber);
         }

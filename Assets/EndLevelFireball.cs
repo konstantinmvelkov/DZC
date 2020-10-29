@@ -18,7 +18,7 @@ public class EndLevelFireball : MonoBehaviour
             reward.SetActive(false);
             fireballSpawner.Stop();
         }
-        //Copied from EndLevelJumping
+
         if(PlayerPrefs.GetInt("fireballLevelLastCompleted") < levelNumber) {
             PlayerPrefs.SetInt("fireballLevelLastCompleted", levelNumber);
         }
