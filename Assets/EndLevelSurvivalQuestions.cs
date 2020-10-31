@@ -14,9 +14,10 @@ public class EndLevelSurvivalQuestions : MonoBehaviour
         {
             endLevelMenu.SetActive(true);
             reward.SetActive(false);
+
+            Time.timeScale = 0;
         }
 
-        Time.timeScale = 0;
 
         if (PlayerPrefs.GetInt("questionsLevelLastCompleted") < levelNumber)
         {

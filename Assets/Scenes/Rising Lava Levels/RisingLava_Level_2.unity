@@ -180,7 +180,7 @@ MonoBehaviour:
   SideWaysAmplitude: 1
   UpwardsFrequency: 0.5
   UpwardsAmplitude: 0.1
-  riseSpeed: 1
+  riseSpeed: 1.5
   startDelay: 3
   dieSound: {fileID: 94380073}
 --- !u!61 &94380072
