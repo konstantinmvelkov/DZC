@@ -7,6 +7,8 @@ public class MenuVideo : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
 
+    public GameObject Canvas_Video;
+
     void Start()
     {
         videoPlayer.targetCameraAlpha = 0f;
@@ -17,8 +19,7 @@ public class MenuVideo : MonoBehaviour
     {
         if((videoPlayer.isPlaying && videoPlayer.time >= videoPlayer.clip.length - 0.1f) || Input.GetKeyDown(KeyCode.Space))
         {
-            videoPlayer.targetCameraAlpha = 0f;
-            videoPlayer.Stop();
+            Stop();
         }
     }
 
@@ -26,5 +27,13 @@ public class MenuVideo : MonoBehaviour
     {
         videoPlayer.Play();
         videoPlayer.targetCameraAlpha = 1f;
+        Canvas_Video.SetActive(true);
+    }
+
+    public void Stop()
+    {
+        videoPlayer.targetCameraAlpha = 0f;
+        videoPlayer.Stop();
+        Canvas_Video.SetActive(false);
     }
 }
