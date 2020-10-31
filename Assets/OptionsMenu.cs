@@ -16,6 +16,12 @@ public class OptionsMenu : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void ResetProgress()
+    {
+        PlayerPrefs.DeleteAll();
+        print("Player preferences deleted");
+    }
+
     public void UpdateVolume(float newVolume)
     {
         PlayerPrefs.SetFloat("Volume", newVolume);

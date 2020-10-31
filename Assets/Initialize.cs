@@ -29,13 +29,4 @@ public class Initialize : MonoBehaviour
         Debug.Log("Fireball: " + PlayerPrefs.GetInt("fireballLevelLastCompleted").ToString());
         Debug.Log("Escape: " + PlayerPrefs.GetInt("escapeAttempts").ToString());
     }
-    void Update()
-    {
-        //Only for testing purposes HAS TO BE REMOVED
-        if (Input.GetKeyDown("space"))
-        {
-            PlayerPrefs.DeleteAll();
-            print("Player preferences deleted");
-        }
-    }
 }
