@@ -20,11 +20,14 @@ public class EndLevelRisingLava : MonoBehaviour
                 reward.SetActive(false);
             }
             risingLava.Stop();
-        }
 
-        if(PlayerPrefs.GetInt("lavaLevelLastCompleted") < levelNumber) {
-            PlayerPrefs.SetInt("lavaLevelLastCompleted", levelNumber);
+            Time.timeScale = 0;
+
+            if (PlayerPrefs.GetInt("lavaLevelLastCompleted") < levelNumber)
+            {
+                PlayerPrefs.SetInt("lavaLevelLastCompleted", levelNumber);
+            }
+            Debug.Log(PlayerPrefs.GetInt("lavaLevelLastCompleted"));
         }
-        Debug.Log(PlayerPrefs.GetInt("lavaLevelLastCompleted"));
     }
 }

@@ -13,6 +13,9 @@ public class QuitLevel : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
+        //Unpause the game
+        Time.timeScale = 1; 
+
         if (sceneName == "GrassFirst" || sceneName == "GrassSecond" || sceneName == "AutumnFirst" || sceneName == "AutumnSecond" || sceneName == "WinterFirst" || sceneName == "WinterSecond")
         {
             SceneManager.LoadScene("JumpingLevels");

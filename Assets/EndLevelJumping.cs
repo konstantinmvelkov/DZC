@@ -22,5 +22,6 @@ public class EndLevelJumping : MonoBehaviour
             PlayerPrefs.SetInt("jumpingLevelLastCompleted",levelNumber);
         }
         Debug.Log(PlayerPrefs.GetInt("jumpingLevelLastCompleted"));
+        Time.timeScale = 0; //Pause the game
     }
 }

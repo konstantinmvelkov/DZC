@@ -17,11 +17,15 @@ public class EndLevelFireball : MonoBehaviour
             endLevelMenu.SetActive(true);
             reward.SetActive(false);
             fireballSpawner.Stop();
-        }
 
-        if(PlayerPrefs.GetInt("fireballLevelLastCompleted") < levelNumber) {
-            PlayerPrefs.SetInt("fireballLevelLastCompleted", levelNumber);
+            Time.timeScale = 0;
+
+            if (PlayerPrefs.GetInt("fireballLevelLastCompleted") < levelNumber)
+            {
+                PlayerPrefs.SetInt("fireballLevelLastCompleted", levelNumber);
+            }
+            Debug.Log(PlayerPrefs.GetInt("fireballLevelLastCompleted"));
         }
-        Debug.Log(PlayerPrefs.GetInt("fireballLevelLastCompleted"));
     }
 }
+
