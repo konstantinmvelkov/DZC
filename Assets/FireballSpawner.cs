@@ -15,6 +15,8 @@ public class FireballSpawner : MonoBehaviour
 
     private bool spawn = true;
 
+    public AudioSource fireballSound;
+
     void Start()
     {
         timer = delay;
@@ -38,6 +40,7 @@ public class FireballSpawner : MonoBehaviour
                 timer = delay;
             }
             Instantiate(fireball_prefab, transform.position + new Vector3(Random.Range(-max_range, max_range), 0, 0), Quaternion.identity);
+            fireballSound.Play();
         }
     }
 
