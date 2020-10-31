@@ -16,6 +16,8 @@ public class EndLevelSurvivalQuestions : MonoBehaviour
             reward.SetActive(false);
         }
 
+        Time.timeScale = 0;
+
         if (PlayerPrefs.GetInt("questionsLevelLastCompleted") < levelNumber)
         {
             PlayerPrefs.SetInt("questionsLevelLastCompleted", levelNumber);
