@@ -17,7 +17,7 @@ public class RisingLava : MonoBehaviour
 
     private float actualY;
 
-    private bool stopped = false;
+    private bool stopped = true;
 
     public AudioSource dieSound;
     
@@ -31,13 +31,16 @@ public class RisingLava : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(Mathf.Sin(SideWaysFrequency * 2 * Mathf.PI * Time.time) * SideWaysAmplitude, actualY + Mathf.Sin(UpwardsFrequency * 2 * Mathf.PI * Time.time) * UpwardsAmplitude, -1);
-        if (startDelay <= 0 && !stopped)
+        if (!stopped)
         {
-            actualY += riseSpeed * Time.deltaTime;
-        }
-        else
-        {
-            startDelay -= Time.deltaTime;
+            if (startDelay <= 0)
+            {
+                actualY += riseSpeed * Time.deltaTime;
+            }
+            else
+            {
+                startDelay -= Time.deltaTime;
+            }
         }
     }
 
@@ -51,6 +54,11 @@ public class RisingLava : MonoBehaviour
             stopped = true;
             StartCoroutine(waitReset());
         }
+    }
+
+    public void Begin()
+    {
+        stopped = false;
     }
 
     public void Stop()

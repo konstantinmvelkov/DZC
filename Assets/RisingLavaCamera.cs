@@ -6,7 +6,7 @@ public class RisingLavaCamera : MonoBehaviour
 {
     public Transform player;
 
-    private float shakeTimer = 1f;
+    private float shakeTimer = 0f;
     private float shakeIntensity = 0.01f;
     private float shakeFrequency = 10f;
     
@@ -30,5 +30,10 @@ public class RisingLavaCamera : MonoBehaviour
             transform.rotation = Quaternion.identity;
             transform.position = new Vector3(0, Mathf.Clamp(player.transform.position.y, 0, float.PositiveInfinity), -10);
         }
+    }
+
+    public void Shake()
+    {
+        shakeTimer = 1f;
     }
 }
