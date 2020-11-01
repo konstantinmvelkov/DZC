@@ -594,8 +594,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2022822947
-  m_SortingLayer: -2
+  m_SortingLayerID: -1690483583
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: be2786eba8a220f4498f35b8e4ef91ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1266,7 +1266,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -1690483583
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &838349906
 RectTransform:
@@ -1512,9 +1512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd773b1ad7104c246b4708b6e48a8202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  survivalQuestions: {fileID: 0}
-  sqUI: {fileID: 0}
-  quitLevel: {fileID: 0}
 --- !u!1 &1091022107
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,9 +8950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd773b1ad7104c246b4708b6e48a8202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  survivalQuestions: {fileID: 0}
-  sqUI: {fileID: 0}
-  quitLevel: {fileID: 0}
 --- !u!1 &2009003147
 GameObject:
   m_ObjectHideFlags: 0

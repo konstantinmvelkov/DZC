@@ -1143,8 +1143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710594035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 25.47, z: 1}
-  m_LocalScale: {x: 0.15755, y: 0.15755, z: 0.15755}
+  m_LocalPosition: {x: 6.914, y: 25.184, z: 1}
+  m_LocalScale: {x: 0.055043727, y: 0.066871755, z: 0.15755}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -1162,7 +1162,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1173,8 +1173,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 3}
-  m_EdgeRadius: 0.2
+  m_Size: {x: 5, y: 1.5}
+  m_EdgeRadius: 0.1
 --- !u!114 &710594039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endLevelMenu: {fileID: 2010735307}
   levelNumber: 4
-  reward: {fileID: 0}
+  reward: {fileID: 710594035}
   risingLava: {fileID: 94380071}
 --- !u!1 &710788061
 GameObject:
@@ -2675,11 +2675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815857750074534, guid: 53a99e5977d74a54b8ec7152551f92af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.5
+      value: 4.47
       objectReference: {fileID: 0}
     - target: {fileID: 4815857750074534, guid: 53a99e5977d74a54b8ec7152551f92af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.39
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4815857750074534, guid: 53a99e5977d74a54b8ec7152551f92af, type: 3}
       propertyPath: m_LocalPosition.z

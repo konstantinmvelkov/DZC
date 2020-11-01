@@ -1260,7 +1260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Still here? Good. Our precious island \nhas multiple seasons. \nIt was
+  m_Text: "Still here? Good. Our \nprecious island \nhas multiple seasons. \nIt was
     autumn and now \nits summer! Hope you appreciate its beauty. Now prove it by
     reaching \nthe top!"
 --- !u!222 &499003915

@@ -25,13 +25,13 @@ public class AvailableLevelSurvivalQuestions : MonoBehaviour
             level1.interactable = true;
         }
         //enable level 2 (and 1)
-        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 1 && PlayerPrefs.GetInt("escapeAttempts") == 1)
+        if ((PlayerPrefs.GetInt("questionsLevelLastCompleted") == 1 || PlayerPrefs.GetInt("questionsLevelLastCompleted") == 2) && PlayerPrefs.GetInt("escapeAttempts") == 1)
         {
             level1.interactable = true;
             level2.interactable = true;
         }
         //enable level 3
-        if (PlayerPrefs.GetInt("questionsLevelLastCompleted") == 2 && PlayerPrefs.GetInt("escapeAttempts") == 2)
+        if ((PlayerPrefs.GetInt("questionsLevelLastCompleted") == 2 || PlayerPrefs.GetInt("questionsLevelLastCompleted") == 3) && PlayerPrefs.GetInt("escapeAttempts") == 2)
         {
             level1.interactable = true;
             level2.interactable = true;
