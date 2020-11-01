@@ -1182,7 +1182,7 @@ MonoBehaviour:
   startLevel: {fileID: 506854072}
   sqUI: {fileID: 943349476}
   quitLevel: {fileID: 1060576314}
-  quitLevelFail: {fileID: 0}
+  quitLevelFail: {fileID: 472818293}
 --- !u!1 &518873901
 GameObject:
   m_ObjectHideFlags: 0
