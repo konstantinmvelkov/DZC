@@ -533,7 +533,7 @@ RectTransform:
   - {fileID: 681301136}
   - {fileID: 396270613}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -756,6 +756,8 @@ MonoBehaviour:
   quitLevel: {fileID: 1060576314}
   quitLevelFail: {fileID: 278352326}
   startLevel: {fileID: 506854072}
+  reward: {fileID: 1776770130}
+  spawnReward: {fileID: 1712371740}
   fireballSpawner: {fileID: 0}
   menu: {fileID: 1118132728}
 --- !u!114 &146974075
@@ -2863,6 +2865,8 @@ MonoBehaviour:
   quitLevel: {fileID: 1060576314}
   quitLevelFail: {fileID: 278352326}
   startLevel: {fileID: 506854072}
+  reward: {fileID: 1776770130}
+  spawnReward: {fileID: 1712371740}
   fireballSpawner: {fileID: 0}
   menu: {fileID: 1118132728}
 --- !u!1 &1110314396
@@ -3166,7 +3170,7 @@ RectTransform:
   - {fileID: 1915275428}
   - {fileID: 1118132729}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5215,7 +5219,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1712371739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712371740}
+  m_Layer: 0
+  m_Name: RewardSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712371740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712371739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.5, y: 6, z: 435.73767}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1772949384
 PrefabInstance:
@@ -5426,7 +5460,7 @@ Transform:
   m_LocalScale: {x: 0.291377, y: 0.09761217, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800395762
 GameObject:

@@ -15,6 +15,8 @@ public class RestartPlayerLevel : MonoBehaviour
     [SerializeField] GameObject quitLevel;
     [SerializeField] GameObject quitLevelFail;
     [SerializeField] GameObject startLevel;
+    [SerializeField] GameObject reward;
+    [SerializeField] Transform spawnReward;
 
     //Vulcano_Level
     [SerializeField] FireballSpawner fireballSpawner;
@@ -44,6 +46,8 @@ public class RestartPlayerLevel : MonoBehaviour
             quitLevel.SetActive(false);
             quitLevelFail.SetActive(false);
             menu.SetActive(false);
+            reward.SetActive(false);
+            reward.transform.position = spawnReward.position;
         }
         if (sceneName == "Fireball_Level_1" || sceneName == "Fireball_Level_2" || sceneName == "Fireball_Level_3")
         {
