@@ -37,7 +37,7 @@ public class Escape : MonoBehaviour
     // Start is called before the first frame update
     public void TryEscape () 
     {
-        int escapeNumber = PlayerPrefs.GetInt("escapeAttempts", 0);
+        int escapeNumber = PlayerPrefs.GetInt("escapeAttempts");
 
         Debug.Log("Escape number: " + escapeNumber.ToString());
         PlayerPrefs.SetInt("escapeAttempts", Mathf.Min(escapeNumber + 1, 2));
