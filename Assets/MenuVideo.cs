@@ -12,6 +12,11 @@ public class MenuVideo : MonoBehaviour
     void Start()
     {
         videoPlayer.targetCameraAlpha = 0f;
+        if(PlayerPrefs.GetInt("FirstLaunch", 0) == 0)
+        {
+            PlayerPrefs.SetInt("FirstLaunch", 1);
+            PlayStory();
+        }
     }
 
     // Update is called once per frame
