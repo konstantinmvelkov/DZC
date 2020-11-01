@@ -21,7 +21,7 @@ public class FireballDead : MonoBehaviour
 
     IEnumerator waitReset()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
