@@ -74,17 +74,20 @@ public class Escape : MonoBehaviour
         sail2.SetActive(false);
         food2.SetActive(false);
         spane2.SetActive(false);
-        base3.SetActive(false);
+        /*base3.SetActive(false);
         sail3.SetActive(false);
         food3.SetActive(false);
-        spane3.SetActive(false);
+        spane3.SetActive(false);*/
 
-        escapeButton.SetActive(false);
+        if (PlayerPrefs.GetInt("escapeAttempts") != 2)
+        {
+            escapeButton.SetActive(false);
 
-        emptyBase.SetActive(true);
-        emptySail.SetActive(true);
-        emptyFood.SetActive(true);
-        emptySpane.SetActive(true);
+            emptyBase.SetActive(true);
+            emptySail.SetActive(true);
+            emptyFood.SetActive(true);
+            emptySpane.SetActive(true);
+        }
     }
 
     public void Update()
