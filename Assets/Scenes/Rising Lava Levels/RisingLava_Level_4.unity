@@ -687,8 +687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.44, y: -0.66}
-  m_SizeDelta: {x: 162.80374, y: 53.87435}
+  m_AnchoredPosition: {x: -1.727, y: 1.81}
+  m_SizeDelta: {x: 166.34982, y: 72.195984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368000269
 MonoBehaviour:
@@ -716,7 +716,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3133,7 +3133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3361,7 +3361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361.3, y: -11.7}
+  m_AnchoredPosition: {x: 182.8, y: 18.4}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588239551
@@ -9582,6 +9582,8 @@ MonoBehaviour:
   quitLevel: {fileID: 0}
   quitLevelFail: {fileID: 0}
   startLevel: {fileID: 0}
+  reward: {fileID: 0}
+  spawnReward: {fileID: 0}
   fireballSpawner: {fileID: 0}
   menu: {fileID: 929379839}
 --- !u!114 &1756708694
